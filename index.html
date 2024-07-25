@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body class="bg-black">
+  <!-- Start Side nav -->
+  <div class="SideNav d-flex flex-column p-3">
+    <i class="fa-solid fa-xmark text-white fs-4 close"></i>
+    <a href="#Search"  class="px-4 py-3 fs-4 mt-5 Serach">Search</a>
+    <a href="#Categories"    class="px-4 py-3 fs-4 Categories">Categories</a>
+    <a href="#Area" class="px-4 py-3 fs-4 Area">Area</a>
+    <a href="#Ingredints" class="px-4 py-3 fs-4 Ingredints"   >Ingredints</a>
+    <a href="#Contact" class="px-4 py-3 fs-4 Contact"   >Contact</a>
+    <span class=" fs-3 open"><i class="fa-solid fa-bars" style="color: #fff;"></i></span>
+  </div>
+    <!-- end Side nav -->
+    <!-- start  random recibes page -->
+    <section id="rondom" class="py-5 ">
+      <div class="container">
+        <div class="row gy-3" id="ShowData">
+          
+        </div>
+      </div>
+    </section>
+    <!-- end  random recibes page -->
+
+    <!-- start search page -->
+  <section id="Serach" class="py-5" >
+    <div class="container">
+      <form action="" class="d-flex gap-3 mb-5">
+        <input type="text"  id="byName" class="form-control" placeholder="Search By Name">
+        <input type="text"  id="byLetter"class="form-control"  placeholder="Search By Frist Letter">
+      </form>
+
+      <div class="row gy-3 pt-5" id="showSearch">
+      </div>
+    </div>
+  </section>
+    <!-- end search page -->
+
+    <!-- start contact page -->
+    <section id="Contact" class="py-5">
+      <div class="container ">
+        <div class="row gy-3">
+          <div class="col-md-4 offset-2">
+            <input type="text" id="name" class="form-control mb-2" placeholder="Enter Your Name">
+            <div id="nameAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="col-md-4">
+            <input type="email" id="email" class="form-control mb-2" placeholder="Enter Your Email">
+            <div id="emailAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="col-md-4 offset-2">
+            <input type="number" id="phone" class="form-control mb-2" placeholder="Enter Your Phone">
+            <div id="phoneAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="col-md-4">
+            <input type="number" id="age" class="form-control mb-2" placeholder="Enter Your Age">
+            <div id="ageAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="col-md-4 offset-2">
+            <input type="password" id="password" class="form-control mb-2" placeholder="Enter Your Password">
+            <div id="passwordAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="col-md-4">
+            <input type="password" id="repassword" class="form-control mb-2" placeholder="Repassword">
+            <div id="repasswordAlert" class="alert alert-danger d-none"></div>
+          </div>
+          <div class="offset-2 col-2">
+            <button class="btn btn-danger" onclick="validateForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- end contact page -->
+<script src="./jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
